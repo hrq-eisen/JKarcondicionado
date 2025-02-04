@@ -4,27 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Técnica de Ar Condicionado</title>
-    <link rel="stylesheet" href="style.css"> <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Assistência Técnica de Ar Condicionado</h1>
+        <div class="container">
+            <h1>Assistência Técnica de Ar Condicionado</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="content">
-        <h2>Sobre a Empresa</h2>
-        <p>Somos especializados em manutenção e reparo de ar condicionado.</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Conforto e qualidade para sua casa ou empresa</h2>
+            <p>Oferecemos serviços de manutenção, reparo e instalação de sistemas de ar condicionado.</p>
+            <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+        </div>
+    </section>
 
-        <h2>Serviços</h2>
-        <ul>
-            <li>Manutenção Preventiva</li>
-            <li>Reparo e Troca de Peças</li>
-            <li>Instalação de Sistemas de Ar Condicionado</li>
-        </ul>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Serviços Oferecidos</h2>
+            <div class="service-item">
+                <h3>Manutenção Preventiva</h3>
+                <p>Garanta o bom funcionamento do seu ar condicionado com manutenções periódicas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Reparos e Consertos</h3>
+                <p>Consertamos qualquer tipo de defeito no seu sistema de climatização.</p>
+            </div>
+            <div class="service-item">
+                <h3>Instalação de Ar Condicionado</h3>
+                <p>Realizamos a instalação de ar condicionados de diversos modelos e marcas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa especializada em serviços de ar condicionado, com mais de 10 anos de experiência no mercado. Nosso objetivo é garantir que você tenha um ambiente sempre climatizado e confortável.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 - Todos os direitos reservados</p>
+        <div class="container">
+            <p>&copy; 2025 Assistência Técnica de Ar Condicionado. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>

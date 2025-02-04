@@ -1,127 +1,109 @@
+/* Resetando padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo do site */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
+/* Cabeçalho */
 header {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 10px 0;
 }
 
-header h1 {
-    font-size: 2em;
-}
-
-nav ul {
-    list-style: none;
+header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-nav ul li {
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
     margin-left: 20px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 16px;
 }
 
-.hero {
-    background-color: #f2f2f2;
-    padding: 50px 0;
-    text-align: center;
+/* Seções */
+section {
+    padding: 40px 20px;
 }
 
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: #333;
+section#intro {
+    background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 5px;
-}
-
-.services {
-    background-color: #e6e6e6;
-    padding: 50px 0;
     text-align: center;
 }
 
-.services h2 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
+section#sobre, section#servicos, section#contato {
+    background-color: #fff;
+    color: #333;
 }
 
-.service-item {
+h2 {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.about {
-    padding: 50px 0;
-    text-align: center;
+ul {
+    list-style-type: none;
 }
 
-.contact {
-    background-color: #f2f2f2;
-    padding: 50px 0;
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.contact form {
+form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
-.contact form label {
+form label {
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
-.contact form input, .contact form textarea {
+form input, form textarea {
     padding: 10px;
-    margin-bottom: 15px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.contact form button {
+form button {
+    padding: 10px;
     background-color: #333;
-    color: white;
-    padding: 10px;
-    font-size: 1.1em;
+    color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
+form button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
-    color: white;
-    padding: 20px 0;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
 }

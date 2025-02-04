@@ -3,78 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistência Técnica de Ar Condicionado</title>
+    <meta name="description" content="Empresa especializada em manutenção e assistência técnica de ar condicionado.">
+    <title>Manutenção e Assistência Técnica de Ar Condicionado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <div class="container">
-            <h1>Assistência Técnica de Ar Condicionado</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#about">Sobre Nós</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">
+                <h1>Ar Clima</h1>
+            </div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="home" class="hero">
+    <!-- Seção de Introdução -->
+    <section id="intro">
         <div class="container">
-            <h2>Conforto e qualidade para sua casa ou empresa</h2>
-            <p>Oferecemos serviços de manutenção, reparo e instalação de sistemas de ar condicionado.</p>
-            <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+            <h2>Manutenção e Assistência Técnica Especializada em Ar Condicionado</h2>
+            <p>Garantimos o funcionamento perfeito do seu ar condicionado com serviços de qualidade e profissionais especializados.</p>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Serviços Oferecidos</h2>
-            <div class="service-item">
-                <h3>Manutenção Preventiva</h3>
-                <p>Garanta o bom funcionamento do seu ar condicionado com manutenções periódicas.</p>
-            </div>
-            <div class="service-item">
-                <h3>Reparos e Consertos</h3>
-                <p>Consertamos qualquer tipo de defeito no seu sistema de climatização.</p>
-            </div>
-            <div class="service-item">
-                <h3>Instalação de Ar Condicionado</h3>
-                <p>Realizamos a instalação de ar condicionados de diversos modelos e marcas.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
+    <!-- Seção Sobre -->
+    <section id="sobre">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Somos uma empresa especializada em serviços de ar condicionado, com mais de 10 anos de experiência no mercado. Nosso objetivo é garantir que você tenha um ambiente sempre climatizado e confortável.</p>
+            <p>A Ar Clima é uma empresa especializada em manutenção e assistência técnica de ar condicionado, atuando com qualidade e confiança no mercado. Nossa missão é garantir o melhor desempenho dos seus aparelhos, oferecendo soluções rápidas e eficazes.</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Seção de Serviços -->
+    <section id="servicos">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <form action="#" method="post">
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Manutenção preventiva de ar condicionado</li>
+                <li>Reparo e conserto de unidades de ar condicionado</li>
+                <li>Instalação de sistemas de climatização</li>
+                <li>Limpeza e higienização de aparelhos</li>
+                <li>Consultoria técnica para escolha de equipamentos</li>
+            </ul>
+        </div>
+    </section>
 
-                <label for="email">E-mail</label>
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações ou para solicitar um orçamento.</p>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Mensagem</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Assistência Técnica de Ar Condicionado. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Ar Clima - Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
